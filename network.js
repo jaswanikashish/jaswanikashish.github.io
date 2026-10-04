@@ -6,7 +6,7 @@
   const B = document.body.dataset;
   const N = +B.n || 70, M = 2;
   const [FX, FY] = (B.center || '.6,.5').split(',').map(Number);
-  const WANT = (B.colors || '1,2,3,4,5,8').split(',').map(Number);
+  const WANT = (B.colors || '1,2,4,5,8').split(',').map(Number);
   let W, H, pal = [], ink = '#000', nodes = [], edges = [], hover = null;
 
   function colors() {
