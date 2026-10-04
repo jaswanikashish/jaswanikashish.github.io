@@ -5,8 +5,29 @@
 <meta name="description" content="Academic website of Your Name: complex systems research.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;600;700&family=Source+Serif+4&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"></head>
 <nav class="bar" aria-label="Main"><a class="brand" href="index.html">About</a><a href="projects.html">Projects</a><a href="cv.html">CV</a><a href="Blog.html">Blog</a><a href="contact.html">Contact</a><button id="theme" aria-label="Toggle light or dark theme">◐</button></nav>
-<main><h2>Research Projects</h2><div class="item"><h3>Inequality in academia from a Network Science perspective</h3><p>One or two lines describing it. Link to code or write-up.</p></div><div class="item">
-<h3>Opinion dynamics with advantage</h3><p>One or two lines describing it.</p></div><div class="item"><h3>Error Correcting Codes</h3><p>One or two lines describing it.</p></div>
+<main><h2>Research Projects</h2><div class="item">
+<h3>Inequality in academia from a Network Science perspective</h3>
+<p>In this project, we have decided to focus on a preferential attachment, majority/minority network with vertex
+removals. We will use definitions of power inequality and glass ceiling provided by Avin et al, and check whether
+these emerge in our simplistic model already. This model is inspired by real world scenario of academic and
+citation networks, which have consistently observed inequality, particularly in STEM fields. It is essential to
+study these keeping in mind vertex removals, which are very prominent and vastly alter the system. We have
+already observed (in data from 2000 to now) that the academic collaboration network in a slowly evolving
+network, where number of people who join is only slightly higher than those who leave.
+The model parameters we will be focusing on are p (probability that a node is added at a time step), f
+(proportion of minority) and r (rate of removal of minority). A combination of these parameters provide
+interesting results in inequality analysis. We hope that some of these results can be used to derive conclusions
+about which parameter has to be changed to improve condition of minority in the network (for eg, increasing
+p is beneficial for minority even when f is low). Hopefully, these results provide some guidance on which
+parameters need to be controlled when implementing solutions to promote gender equality in academia.</p>
+</div><div class="item">
+<h3>Opinion dynamics with advantage</h3><p> We consider a network, where each vertex has one of two opinions. At every time step, 
+  a new node enters the system and connects with existing vertices with preferential attachment. Suppose it connects to k nodes of opinion 1, 
+  then the node chooses opinion 1 with probability k/m. <i> What happens when we let this process run forever? Is there convergence of any one type? </i>
+  This model was studied by Antunovic et al, where they proved the existence of limiting distributions which have full support on [0,1], have no 
+  atoms (in the linear case). We are currently considering a slight adaptation of this model, what if nodes of type 1 are allowed to switch to type 2 with probability p?
+  (This is a work in progress). </p></div><div class="item">
+<h3>Error Correcting Codes</h3><p>One or two lines describing it.</p></div>
 <div class="item"><h3>Representation Theory and Tensor Products</h3><p>One or two lines describing it.</p></div>
 </main>
 <script src="theme.js"></script></body></html>
