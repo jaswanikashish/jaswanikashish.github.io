@@ -36,31 +36,41 @@ a{color:var(--c5)}
 .hint button{font:inherit;color:var(--ink);background:none;border:0;border-bottom:1px solid var(--muted);cursor:pointer;padding:0}
 /* ===== CV PAGE ===== */
 
-#cv-container {
-  width: 100% !important;
-  max-width: none !important;
-  margin: 0 !important;
-  padding: 40px 20px !important;
+/* ===== CV PAGE ===== */
 
-  display: flex !important;
-  justify-content: center !important;
-  align-items: flex-start !important;
+main#cv-container {
+  position: relative;
+  z-index: 1;
 
-  box-sizing: border-box !important;
+  width: 100%;
+  max-width: none;
+
+  margin: 0;
+  padding: 7rem 20px 40px;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  box-sizing: border-box;
 }
 
-#cv-pdf {
-  display: block !important;
+iframe#cv-pdf {
+  display: block;
 
-  width: 900px !important;
-  height: 1200px !important;
+  width: 900px;
+  height: 1200px;
 
-  max-width: 100% !important;
+  max-width: 100%;
 
-  border: none !important;
-  margin: 0 !important;
-  padding: 0 !important;
+  margin: 0;
+  padding: 0;
+
+  border: none;
 
   background: white;
+
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
 }
+
 
