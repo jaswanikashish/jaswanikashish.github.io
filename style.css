@@ -58,7 +58,7 @@ a{color:var(--c5)}
   max-width: 100% !important;
 
   border: none !important;
-  margin: 100 !important;
+  margin: 0 !important;
   padding: 0 !important;
 
   background: white;
